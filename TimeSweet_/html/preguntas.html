@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoTS.png" type="image/x-icon">
+    <title>TimeSweet</title>
+    
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/consultas.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body>
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="index.html" class="logo"><img src="../img/logoTS.png" alt=""></a>
+            <a href="index.html"><h1 class="logoName">Time Sweet</h1></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html#home">inicio</a>
+            <a href="index.html#product">productos</a>
+            <a href="index.html#ofertas">ofertas</a>
+            <a href="index.html#review">clientes</a>
+            <a href="index.html#contact">contacto</a>
+            <a href="consultas.html">consultas</a>
+            <a href="preguntas.html">Q&A</a>
+        </nav>
+
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="icon">
+            <img src="../img/defaultAvatar.jpg" id="abrir" class="imgLogin">
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!--Portada-->
+    <div class="contendorModal" id="contenedor_modal">
+        <form action="menuAd.html" method="post">
+        <div class="modal">
+            <h1>LOGIN</h1>
+
+            <label for="correo" class="txtForm" >Correo Electronico:</label>
+            <input type="email" id="correo" name="correo" class="inputForm" required>
+
+            <label for="password" class="txtForm" >Contraseña:</label>
+            <input type="password" id="password" name="password" class="inputForm" required>
+            <a href="registro.html" class="txtForm">Registrarse</a><br>
+            <button id="ingresar"name="ingresar" class="button" type="submit">ingresar</button>
+            <label id="cerrar" class="button">Cerrar</label>
+        </div>
+        </form>
+    </div>
+
+    <div class="container-all" id="move-content">
+        <div class="blog-container-cover">
+            <div class="container-info-cover">
+                <h2>Preguntas más frecuentes</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-acordeon">
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+            <label for="btn-acordeon1">
+                ¿Tienen servicio a domicilio?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Sí, contamos con entregas en diferentes ciudades. Y está limitado por los códigos postales.</p>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+            <label for="btn-acordeon2">
+                ¿Cuál es el costo de envío?
+            </label>
+            <div class="contenido-acordeon">
+                <p>El costo de envío se cotiza según el código postal. 
+                    Puedes corroborar el costo del envío antes de realizar 
+                    la compra al ingresar tu código postal o si desea 
+                    revisar el costo de envio de otra área de la misma 
+                    ciudad es necesario capturar el otro código postal y de 
+                    inmediato se actualizará la información. Para revisar 
+                    costos y áreas de entrega puede contactarse con nosotros 
+                    de igual forma.</p>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+            <label for="btn-acordeon3">
+                ¿Con cuánto tiempo de anticipación debo realizar mis pedidos?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Se recomienda que realicen los pedidos con 3 días de anticipación, 
+                    pero recibimos pedidos hasta con 2 días hábiles antes de la fecha 
+                    de entrega.</p>    
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+            <label for="btn-acordeon4">
+                ¿Cuál es el tiempo de entrega en el que puedo recibir mi producto?
+            </label>
+            <div class="contenido-acordeon">
+                <p>El horario de entregas a domicilio es de 10:00 a 20:00 hrs. 
+                    Contamos con 5 bloques diferentes de 2 horas cada para que 
+                    usted pueda elegir el bloque que mejor se le acomode.</p>   
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+            <label for="btn-acordeon5">
+                ¿Cuáles son los métodos de pago que puedo utilizar?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Aceptamos pagos en línea con tarjetas de crédito y débito. 
+                    También aceptamos transferencias bancarias y pagos contra 
+                    entrega en efectivo, con tarjeta de crédito y débito.</p>  
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+            <label for="btn-acordeon6">
+                ¿Para cuantas personas alcanza un pastel?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Tenemos pasteles de diferentes tamaños, el más pequeño 
+                    es de 4 personas y el grande es de 20 personas. 
+                    Contamos con pedidos especiales que pueden alcanzar 
+                    hasta 150 personas.</p> 
+            </div>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="credit">
+            <br><p>&copy; 2023 grupo05  | All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="../js/consultas.js"></script>
+    <script src="../js/modal.js"></script>
+
+</body>
+
+</html>

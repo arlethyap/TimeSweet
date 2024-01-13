@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoTS.png" type="image/x-icon">
+    <title>Realizar Pedido</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head> 
+<body>
+
+    <header class="header">
+        <div class="logoContent">
+            <a href="index.html" class="logo"><img src="../img/logoTS.png" alt=""></a>
+            <a href="index.html"><h1 class="logoName">Time Sweet</h1></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html#home">inicio</a>
+            <a href="index.html#product">productos</a>
+            <a href="index.html#ofertas">ofertas</a>
+            <a href="index.html#review">clientes</a>
+            <a href="index.html#contact">contacto</a>
+            <a href="consultas.html">consultas</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+
+        <div class="icon">
+            <img src="../img/defaultAvatar.jpg" id="abrir" class="imgLogin">
+        </div>
+        
+    </header>
+
+    <div class="contendorModal" id="contenedor_modal">
+        <form action="menuAd.html" method="post">
+        <div class="modal">
+            <h1>LOGIN</h1>
+
+            <label for="correo" class="txtForm" >Correo Electronico:</label>
+            <input type="email" id="correo" name="correo" class="inputForm" required>
+
+            <label for="password" class="txtForm" >Contraseña:</label>
+            <input type="password" id="password" name="password" class="inputForm" required>
+            <a href="registro.html" class="txtForm">Registrarse</a><br>
+            <button id="ingresar"name="ingresar" class="button" type="submit">ingresar</button>
+            <label id="cerrar" class="button">Cerrar</label>
+        </div>
+        </form>
+    </div>
+
+    <main>
+        <form action="index.html" method="post">
+            <div class="contForm" >
+                <h2 class="nameCaja">NOTIFICAIONES</h2>
+                <label for="persona" class="txtForm">Buscar Usuario:</label>
+                <input type="search" id="persona" name="persona" class="inputForm" placeholder="Nombre de Usuario/Todos" required>
+
+                <label for="label" class="txtForm">Tipo Notificación:</label>
+                <select id="cmbNoti" name="cmbNoti"  class="txtForm" required>
+                    <option value="1">Notificacion</option>
+                    <option value="2">Oferta</option>
+                    <option value="2">Evento</option>
+                </select>
+                <label for="label" class="txtForm">Descripción adicional:</label>
+                <textarea id="detalle" name="detalle" class="inputForm" required></textarea>
+
+                <label for="label" class="txtForm"><strong>IMAGEN DE NOTIFICACIÓN</strong></label>
+                <div class="panel" style="width: 60%;">
+                    <div class="img">
+                        <img src="../img/defaultIcon.png" id="img" name="img">
+                        <input type="file" id="foto" name="foto" accept="image/*" hidden >
+                    </div>
+                    <div style="margin: 10px;"><label for="foto" class="button" >Seleccionar Imagen</label></div>
+                </div>
+                <br>
+                <button class="button" type="submit">Notificación de Pedido</a></button>
+                <a href="menuAd.html"><input type="button" value="Retornar al Menu" class="button"></a>
+            </div>
+        </form>
+        
+    </main>
+    <script src="../js/img.js"></script>
+    <script src="../js/modal.js"></script>
+</body>

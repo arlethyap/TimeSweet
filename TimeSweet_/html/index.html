@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoTS.png" type="image/x-icon">
+    <title>TimeSweet</title>
+    
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body>
+    
+
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="index.html" class="logo"><img src="../img/logoTS.png" alt=""></a>
+            <a href="index.html"><h1 class="logoName">Time Sweet</h1></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">inicio</a>
+            <a href="#product">productos</a>
+            <a href="#ofertas">ofertas</a>
+            <a href="#review">clientes</a>
+            <a href="#contact">contacto</a>
+            <a href="consultas.html">consultas</a>
+            <a href="preguntas.html">Q&A</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+
+        <div class="icon">
+            <img src="../img/defaultAvatar.jpg" id="abrir" class="imgLogin">
+        </div>
+
+        <div class="contendorModal" id="contenedor_modal">
+            <form action="menuAd.html" method="post">
+            <div class="modal">
+                <h1>LOGIN</h1>
+
+                <label for="correo" class="txtForm" >Correo Electronico:</label>
+                <input type="email" id="correo" name="correo" class="inputForm" required>
+
+                <label for="password" class="txtForm" >Contraseña:</label>
+                <input type="password" id="password" name="password" class="inputForm" required>
+                <a href="registro.html" class="txtForm">Registrarse</a><br>
+                <button id="ingresar"name="ingresar" class="button" type="submit">ingresar</button>
+                <label id="cerrar" class="button">Cerrar</label>
+            </div>
+            </form>
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Deliciosos Postres</h2>
+            <p>DISFRUTA DE NUESTROS DELICIOSOS POSTRES EN TODO MOMENTO</p>
+            <div class="home-btn">
+                <a href="realizarPedido.html"><button>PIDE AQUÍ</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- home section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <br>
+            <h2>- Nuestros productos -</h2>
+            <br>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="../img/slider_1.png" alt="torta red velvet">
+                    </div>
+                    <div class="product-content">
+                        <br>
+                        <h3>Torta Red Velvet</h3>
+                        <br>
+                        <p></p>
+                        <br>
+                        <p>un equilibrio perfecto entre la suavidad seductora del queso crema y la explosión refrescante de arándanos.</p>
+                        <br>
+                        <p></p>
+                        <br>
+                        <div class="orderNow">
+                            <a href="realizarPedido.html"><button>Ordenar ahora</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="../img/slider_2.png" alt="arandanos">
+                    </div>
+                    <div class="product-content">
+                        <h3>cheesecake de arandanos</h3>
+                        <br>
+                        <p>un equilibrio perfecto entre la suavidad seductora del queso crema y la explosión refrescante de arándanos.</p>
+                        <div class="orderNow">
+                            <a href="realizarPedido.html"><button>Ordenar ahora</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="../img/slider_3.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <br>
+                        <h3>torta de Chocolate</h3>
+                        <br>
+                        <p></p>
+                        <br>
+                        <p>un festín indulgente con capas esponjosas de bizcocho de cacao, deleitando con su intensidad y suavidad celestial.</p>
+                        <br>
+                        <p></p>
+                        <br>
+                        <div class="orderNow">
+                            <a href="realizarPedido.html"><button>Ordenar ahora</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="../img/slider_4.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <br>
+                        <h3>Cupcakes</h3>
+                        <p></p>
+                        <br>
+                        <p>una pequeña delicia esponjosa, adornada con una crema suave y dulce, que celebra la armonía perfecta en cada bocado.</p>
+                        <br>
+                        <div class="orderNow">
+                            <a href="realizarPedido.html"><button>Ordenar ahora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- product section end here  -->
+
+    <!-- ofertas section start here  -->
+    <section class="ofertas" id="ofertas">
+
+        <div class="swiper ofertas-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="../img/perso_img2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>¡Celebra la navidad con dulzura y sabor!</h3>
+                        <p>Descubre nuestras irresistibles tortas navideñas</p>
+                        <p>Aprovecha nuestras exclusivas ofertas y lleva a casa un pedazo de alegría navideña. ¡Haz que tus festividades sean aún más dulces con nuestras deliciosas tortas!</p>
+                        <a href="#perso" class="btn">leer más</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="../img/perso_img1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>¡Cada torta es única como tú!</h3>
+                        <p>Por eso en Time Sweet personalizamos tu pedido</p>
+                        <p>¿Estás próxima a casarte, celebrar un bautizo o tener una fiesta temática? Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta adecuada.</p>
+                        <a href="#perso" class="btn">leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ofertas section ends here  -->
+
+    <!-- newsletter section start here
+
+    <section class="newsletter">
+        <form action="">
+            <h3>subscribe for latest update</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="button" value="subscribe" class="box2">
+        </form>
+    </section>
+    newsletter section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <br>
+            <h2>comentarios de clientes</h2>
+        </div>
+        <div class="swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Hace unos meses agende mi pedido con TimeSweet, llego todo puntual y de sabor excelente, lo recomendaría siempre productos de alta calidad.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../img/avatar1.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Cecilia de la cruz</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>pude realizar mi pedido de manera fácil. su torta de chocolate muy delicioso, por eso y mucho más la recomiendo mucho.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../img/avatar2.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Catalina Gonzales</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Excelente servicio , lo recomendaria son muy puntuales ,mi pedido llego tal cual lo pedi , mi torta llego fresca y muy rica. Gracias.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../img/avatar3.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Luis Carrillo</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>De las mejores pastelerias que exiten en Lima, seguire realizando pedidos para todos los eventes que tenga en mi agenda. Excelente servicio.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../img/avatar4.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Camilo Talavera</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+    
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="box">
+                <br>
+                <br>
+                <h3>Quick link</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i>inicio</a>
+                <a href="#product"> <i class="fas fa-arrow-right"></i>productos</a>
+                <a href="#ofertas"> <i class="fas fa-arrow-right"></i>ofertas</a>
+                <a href="#review"> <i class="fas fa-arrow-right"></i>clientes</a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i>contacto</a>
+                <a href="#consultas"> <i class="fas fa-arrow-right"></i>consultas</a>
+            </div>
+            <div class="box">
+                <br>
+                <br>
+                <h3>Contact Info</h3>
+                <a href="tel:+51 978 042 588"> <i class="fas fa-phone"></i>+51 978 042 588</a>
+                <a href="mailto:timesweet@gmail.com"> <i class="fas fa-envelope"></i>timesweet@gmail.com</a>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="share">
+            <br>
+            <!--<a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>-->
+            <a href="https://www.instagram.com/timesweet.pe/" target="_blank" class="fab fa-instagram"></a>
+            <!--<a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>-->
+        </div>
+        <div class="credit">
+            <br><p>&copy; 2023 grupo05  | All right reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="../js/index.js"></script>
+    <script src="../js/modal.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoTS.png" type="image/x-icon">
+    <title>TimeSweet</title>
+    
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/consultas.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body>
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="index.html" class="logo"><img src="../img/logoTS.png" alt=""></a>
+            <a href="index.html"><h1 class="logoName">Time Sweet</h1></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html#home">inicio</a>
+            <a href="index.html#product">productos</a>
+            <a href="index.html#ofertas">ofertas</a>
+            <a href="index.html#review">clientes</a>
+            <a href="index.html#contact">contacto</a>
+            <a href="consultas.html">consultas</a>
+            <a href="preguntas.html">Q&A</a>
+        </nav>
+
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="icon">
+            <img src="../img/defaultAvatar.jpg" id="abrir" class="imgLogin">
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!--Portada-->
+    <div class="contendorModal" id="contenedor_modal">
+        <form action="menuAd.html" method="post">
+        <div class="modal">
+            <h1>LOGIN</h1>
+
+            <label for="correo" class="txtForm" >Correo Electronico:</label>
+            <input type="email" id="correo" name="correo" class="inputForm" required>
+
+            <label for="password" class="txtForm" >Contraseña:</label>
+            <input type="password" id="password" name="password" class="inputForm" required>
+            <a href="registro.html" class="txtForm">Registrarse</a><br>
+            <button id="ingresar"name="ingresar" class="button" type="submit">ingresar</button>
+            <label id="cerrar" class="button">Cerrar</label>
+        </div>
+        </form>
+    </div>
+
+    <div class="container-all" id="move-content">
+        
+    
+        <div class="blog-container-cover">
+
+            <div class="container-info-cover">
+                <h2>¡Una experiencia Deliciosa Comienza Aquí!</h2>
+                <p>- La vida es corta... comete el postre primero - </p>
+            </div>
+        </div>
+    
+        <div class="container-post">
+    
+            <input type="radio" id="todos" name="categories" value="todos" checked>
+            <input type="radio" id="cupcakes" name="categories" value="cupcakes">
+            <input type="radio" id="tortas" name="categories" value="tortas">
+            <input type="radio" id="pyes" name="categories" value="pyes">
+            <input type="radio" id="tartaletas" name="categories" value="tartaletas">
+            <input type="radio" id="empanadas" name="categories" value="empanadas">
+            <input type="radio" id="galletas" name="categories" value="galletas">
+            <input type="radio" id="chessecake" name="categories" value="chessecake">
+
+
+
+            <div class="container-category">
+                <label for="todos"><img class="iconos" src="../img/todos.png" alt="todos"> todos</label>
+                <label for="cupcakes"><img class="iconos" src="../img/cupcake.png" alt="cupcakes"> cupcakes</label>
+                <label for="tortas"><img class="iconos" src="../img/torta.png" alt="tortas"> tortas</label>
+                <label for="pyes"><img class="iconos" src="../img/pyes.png" alt="pyes"> pyes</label>
+                <label for="tartaletas"><img class="iconos" src="../img/tartaletas.png" alt="tartaletas"> tartaletas</label>
+                <label for="empanadas"><img class="iconos" src="../img/empanadas.png" alt="empanadas"> empanadas</label>
+                <label for="galletas"><img class="iconos" src="../img/galletas.png" alt="galletas"> galletas</label>
+                <label for="chessecake"><img class="iconos" src="../img/cheescake.png" alt="chessecake"> chessecake</label>
+                <a href="realizarPedido.html"><img class="iconos" src="../img/torta.png" alt="personalizados"> personalizados</a></label>
+            </div>
+    
+            <div class="posts">
+    
+                <div class="post" data-category="tortas">
+    
+                    <div class="ctn-img">
+                        <img src="../img/torta_chocolate.png" alt="">
+                    </div>
+                    <h2>torta de chocolate <br> s/70.00</h2>
+                    <br>
+                    <span>la favorita. suave, húmeda, rellena de una capa de fudge y una de manjar, cubierta con ganache y fudge casero.</span>
+                    <ul class="ctn-tag">
+                        <li>tortas</li>
+                    </ul>
+                    <a href="#"><button>Pedir ahora</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="tortas">
+    
+                    <div class="ctn-img"><img src="../img/torta_carrot cake.png" alt=""></div>
+                    <h2>Carrot cake <br> s/70.00</h2>
+                    <br>
+                    <span>3 capas de nuestro suave bizcochuelo de zanahoria con pecanas, relleno y cubierto de frosting de queso crema y manjar blanco.</span>
+                    <ul class="ctn-tag">
+                        <li>tortas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="tortas">
+    
+                    <div class="ctn-img"><img src="../img/torta_red velvet.png" alt=""></div>
+                    <h2>Red Velvet <br> s/70.00</h2>
+                    <br>
+                    <span>3 discos de keke red velvet, relleno de un mix de frosting de queso crema con chantillí, 2 capas de fudge, frambuesas y blueberries.</span>
+                    <ul class="ctn-tag">
+                        <li>tortas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="tortas">
+    
+                    <div class="ctn-img"><img src="../img/torta_tres_leches.png" alt=""></div>
+                    <h2>Tres Leches Clásica <br> s/70.00</h2>
+                    <br>
+                    <span>suave bizcochuelo casero bañado en tres tipos de leche, rellena con una capa de manjar y cubierta en suave crema chantilly.</span>
+                    <ul class="ctn-tag">
+                        <li>tortas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="cupcakes">
+    
+                    <div class="ctn-img"><img src="../img/cup_vainilla.png" alt=""></div>
+                    <h2>Cupcake de Vainilla <br>- 12 unid <br><br> s/50.00</h2>
+                    <br>
+                    <span>Irresistible cupcake de vainilla, con esponjosa base y delicado frosting, una delicia que eleva la dulzura clásica a nuevas alturas.</span>
+                    <ul class="ctn-tag">
+                        <li>cupcakes</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="cupcakes">
+    
+                    <div class="ctn-img"><img src="../img/cup_red.png" alt=""></div>
+                    <h2>Cupcake Red velvet <br>- 12 unid <br><br> s/60.00</h2>
+                    <br>
+                    <span>Exquisito cupcake Red Velvet, con su esponjoso bizcocho de terciopelo rojo y cremoso frosting, una experiencia indulgente en cada bocado.</span>
+                    <ul class="ctn-tag">
+                        <li>cupcakes</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="cupcakes">
+    
+                    <div class="ctn-img"><img src="../img/cup_chocolate.png" alt=""></div>
+                    <h2>Cupcake de Chocolate <br>- 12 unid <br><br> s/55.00</h2>
+                    <br>
+                    <span>Cupcake de chocolate indulgente, con esponjoso bizcocho y cobertura intensamente rica, una explosión de placer para los amantes del cacao.</span>
+                    <ul class="ctn-tag">
+                        <li>cupcakes</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+    
+                </div>
+                
+                <div class="post" data-category="cupcakes">
+    
+                    <div class="ctn-img"><img src="../img/cup_navideño.png" alt=""></div>
+                    <h2>Cupcake Navideño <br>- 12 unid <br><br> s/70.00</h2>
+                    <br>
+                    <span>Cupcake navideño: un pequeño festín de sabores festivos, con esponjoso bizcocho adornado con decoraciones encantadoras.</span>
+                    <ul class="ctn-tag">
+                        <li>cupcakes</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="pyes">
+                    <div class="ctn-img"><img src="../img/pye_limon.png" alt=""></div>
+                    <h2>Pye de Limón <br> s/50.00</h2>
+                    <br>
+                    <span>una explosión refrescante en cada bocado, con su crujiente corteza y relleno suave y cítrico, llevando la frescura del limón a la perfección.</span>
+                    <ul class="ctn-tag">
+                        <li>pyes</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+                
+                <div class="post" data-category="pyes">
+                    <div class="ctn-img"><img src="../img/pye_manzana.png" alt=""></div>
+                    <h2>Pye de Manzana <br> s/50.00</h2>
+                    <br>
+                    <span>una deliciosa combinación de manzanas, envueltas en una crujiente masa dorada, ofreciendo el placer acogedor de la canela.</span>
+                    <ul class="ctn-tag">
+                        <li>pyes</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="pyes">
+                    <div class="ctn-img"><img src="../img/pye_maracuya.png" alt=""></div>
+                    <h2>Pye de Maracuyá <br> s/50.00</h2>
+                    <br>
+                    <span>una explosión refrescante en cada bocado, con su crujiente corteza y relleno suave y cítrico, llevando la frescura del limón a la perfección.</span>
+                    <ul class="ctn-tag">
+                        <li>pyes</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="tartaletas">
+                    <div class="ctn-img"><img src="../img/tarta_frutos.png" alt=""></div>
+                    <h2>Tartaleta de Frutos rojos <br> s/70.00</h2>
+                    <br>
+                    <span>una explosión vibrante con una crujiente base que realza la armonía jugosa y colorida de fresas, frambuesas y arándanos.</span>
+                    <ul class="ctn-tag">
+                        <li>tartaletas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="tartaletas">
+                    <div class="ctn-img"><img src="../img/tarta_durazno.png" alt=""></div>
+                    <h2>Tartaleta de durazno <br> s/70.00</h2>
+                    <br>
+                    <span>una delicia veraniega con una base tierna y relleno de duraznos frescos, que captura la dulzura y la suavidad en cada mordisco.</span>
+                    <ul class="ctn-tag">
+                        <li>tartaletas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="tartaletas">
+                    <div class="ctn-img"><img src="../img/tarta_fresa.png" alt=""></div>
+                    <br>
+                    <h2>Tartaleta de Fresa<br> s/70.00</h2>
+                    <br>
+                    <span>una oda a la frescura, con una base crujiente y explosión de fresas jugosas, brindando una experiencia dulce en cada deliciosa porción.</span>
+                    <ul class="ctn-tag">
+                        <li>tartaletas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="empanadas">
+                    <div class="ctn-img"><img src="../img/empa_queja.png" alt=""></div>
+                    <h2>Empanada jamon queso <br>- 12 unid <br> s/70.00</h2>
+                    <span>una combinación irresistible donde la exquisitez del jamón se entrelaza perfectamente 
+                        con el sabor del queso.</span>
+                    <ul class="ctn-tag">
+                        <li>empanadas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="empanadas">
+                    <div class="ctn-img"><img src="../img/empa_pollo.png" alt=""></div>
+                    <h2>Empanada de pollo <br>- 6 unid <br> s/30.00</h2>
+                    <span>un bocado sabroso relleno jugoso de pollo sazonado, 
+                        ofreciendo la combinación perfecta de masa crujiente en cada mordisco.</span>
+                    <ul class="ctn-tag">
+                        <li>empanadas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="empanadas">
+                    <div class="ctn-img"><img src="../img/empa_carne.png" alt=""></div>
+                    <h2>Empanada de carne <br>- 6 unid <br> s/35.00</h2>
+                    <span>una delicia salada ofreciendo la combinación perfecta de textura crujiente y sabores irresistiblemente carnosos en cada bocado.</span>
+                    <ul class="ctn-tag">
+                        <li>empanadas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+
+                <div class="post" data-category="galletas">
+                    <div class="ctn-img"><img src="../img/galle_choco.png" alt=""></div>
+                    <h2>Galleta de Chocolate <br>- 6 unid <br> s/30.00</h2>
+                    <span> un deleite crujiente con cacao y la indulgencia de trozos de chocolate, ofreciendo un placer decadente en cada mordisco.</span>
+                    <ul class="ctn-tag">
+                        <li>galletas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="galletas">
+                    <div class="ctn-img"><img src="../img/galle_red.png" alt=""></div>
+                    <h2>Galleta de Red Velvet <br>- 6 unid <br> s/45.00</h2>
+                    <span>una exquisitez de sabor distintivo del Red Velvet, 
+                        complementado por una cremosa capa de queso.</span>
+                    <ul class="ctn-tag">
+                        <li>galletas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="galletas">
+                    <div class="ctn-img"><img src="../img/galle_nutella.png" alt=""></div>
+                    <h2>Galleta rellena de Nutella <br>- 6 unid <br> s/50.00</h2>
+                    <span>una explosión de chocolate rodean de Nutella cremosa, creando una 
+                        experiencia de galleta indulgente y deliciosamente decadente.</span>
+                    <ul class="ctn-tag">
+                        <li>galletas</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="chessecake">
+                    <div class="ctn-img"><img src="../img/chesse_frutos.png" alt=""></div>
+                    <h2>chessecake frutos rojos<br> s/80.00</h2>
+                    <span>una experiencia indulgente se combina armoniosamente con el sabor fresco y dulce de las fresas, 
+                        creando un postre irresistible.</span>
+                    <ul class="ctn-tag">
+                        <li>chessecake</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+
+                <div class="post" data-category="chessecake">
+                    <div class="ctn-img"><img src="../img/chesse_fresa.png" alt=""></div>
+                    <h2>cheescake de fresa <br> s/65.00</h2>
+                    <span>una obra maestra cremosa que combina la suavidad del queso crema con refrescante de frutos rojos.</span>
+                    <ul class="ctn-tag">
+                        <li>chessecake</li>
+                    </ul>
+                    <a href="realizarPedido.html"><button>Pedir ahora</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer" id="contact">
+        <div class="credit">
+            <br><p>&copy; 2023 grupo05  | All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="../js/consultas.js"></script>
+    <script src="../js/modal.js"></script>
+
+</body>
+
+</html>

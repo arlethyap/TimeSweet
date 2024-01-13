@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoTS.png" type="image/x-icon">
+    <title>Realizar Pedido</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head> 
+<body class="bodyForm">
+    <header class="header" style="border: 200px;">
+        <div class="logoContent">
+            <a href="index.html" class="logo"><img src="../img/logoTS.png" alt=""></a>
+            <a href="index.html"><h1 class="logoName">Time Sweet</h1></a>
+        </div>
+
+        <nav class="navbar">    
+            <a href="index.html#home">inicio</a>
+            <a href="index.html#product">productos</a>
+            <a href="index.html#ofertas">ofertas</a>
+            <a href="index.html#review">clientes</a>
+            <a href="index.html#contact">contacto</a>
+            <a href="consultas.html">consultas</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+
+        <div class="icon">
+            <img src="../img/defaultAvatar.jpg" id="abrir" class="imgLogin">
+        </div>
+    </header>
+
+    <div class="contendorModal" id="contenedor_modal">
+        <form action="menuAd.html" method="post">
+        <div class="modal">
+            <h1>LOGIN</h1>
+
+            <label for="correo" class="txtForm" >Correo Electronico:</label>
+            <input type="email" id="correo" name="correo" class="inputForm" required>
+
+            <label for="password" class="txtForm" >Contraseña:</label>
+            <input type="password" id="password" name="password" class="inputForm" required>
+            <a href="registro.html" class="txtForm">Registrarse</a><br>
+            <button id="ingresar"name="ingresar" class="button" type="submit">ingresar</button>
+            <label id="cerrar" class="button">Cerrar</label>
+        </div>
+        </form>
+    </div>
+
+    <main style="padding-top: 10%;">
+        <a href="realizarPedido.html"><label class="button">Realizar Pedidos</label></a>
+        <form action="" method="post" style="padding: 20px 0;">
+            <button onclick='generarTabla();' class="button" type="reset">Generar Tabla</button>
+            <div id="tabla">
+
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="../js/tablas.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
